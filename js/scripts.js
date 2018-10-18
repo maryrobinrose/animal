@@ -1,31 +1,16 @@
-$(function(){
+$(document).ready(function() {
+  $(".animalChoice").submit(function(){
+    $(".info").hide();
+    console.log("user clilcked submit");
+    event.preventDefault();
+    var selection = $("#bar").val();
+    console.log("selection: "+selection);
 
-  $("#bar").change(function(){
-    var animal = $("#bar").val();
-    console.log(animal)
-
-      if (animal = "val.cats") {
-        $("#catInfo").show()
-      }
-
-
-   });
+    if (selection === "cats") {
+      $("#catInfo").show();
+    }
+    if (selection === "volvo") {
+      $("#dogInfo").show();
+    }
+  })
 });
-
-
-
-    // $(function message() {
-    //
-    //   var s = document.getElementById('#animals');
-    //   var #animals = s.options[s.selectedIndex]".value";
-
-      // if ("#animals" === 1) {
-      //     .show("#catInfo")
-      // }
-      // else if ("#animals" === 2) {
-      //     alert("it equals microphone")
-      // }
-      // else if ("#animals" == 3) {
-      //     alert("it equals tripod")
-    //   }
-    // });
