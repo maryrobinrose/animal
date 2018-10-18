@@ -1,8 +1,8 @@
-#catInfo, #dogInfo {
+.container{
   display: none;
 }
 
-#snuffles:hover {
+#cats:hover {
   cursor: pointer;
   background-color: lightblue;
   margin: auto;
@@ -11,4 +11,13 @@
   cursor: pointer;
   background-color: lightblue;
   margin: auto;
+}
+#birds:hover {
+  cursor: pointer;
+  background-color: lightblue;
+  margin: auto;
+}
+
+img {
+  height: 300px;
 }
