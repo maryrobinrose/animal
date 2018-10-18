@@ -1,0 +1,14 @@
+#catInfo, #dogInfo {
+  display: none;
+}
+
+#snuffles:hover {
+  cursor: pointer;
+  background-color: lightblue;
+  margin: auto;
+}
+#dogs:hover {
+  cursor: pointer;
+  background-color: lightblue;
+  margin: auto;
+}
